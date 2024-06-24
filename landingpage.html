@@ -1,174 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<style>
-
-    :root{
-        --theme-color: darkblue ;
-        --theme-color-dark: rgb(3, 3, 51) ;
-    
-
-    }
-    *{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        :root {
+            --theme-color: darkblue;
+            --theme-color-dark: rgb(3, 3, 51);
 
 
+        }
+
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
 
 
-    body, h1, h2, h3, h4, h5, h6{
-        margin: 0;
-    }
-header{
-height: 60vh;
 
-display: flex;
-justify-content: center;
-align-items: center;
-background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/10/Pine-Forest-Wallpaper-High-Quality-HD.jpg');
-background-size: cover;
-text-align: center;
-background-position: bottom;
 
-}
-.header-content{
-    border: 2px solid blue;
-    color: white;
-}
-.header-title{
-    font-size: 50px;
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
 
-}
+        header {
+            height: 60vh;
 
-.btn{
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-.btn-main{
-    background-color: var(--theme-color);
-color: white;
-}
-.btn-outline{
-    background-color: white ;
-    color: var(--theme-color);
-}
-section{
-    padding: 5%
-     10%;
-}
-.card-container{
-    display: flex;
-    gap: 20px;
-   
-}
-.card {
-    border: 2px solid rebeccapurple;
-    padding: 50px 30px;
-    border-radius: 10px;
-    text-align: center;
-    color: var(--theme-color-dark);
-}
-.card *{
-    margin: 20px;
-}
-.card:hover{
-    color: wheat;
-    background-color: var(--theme-color);
-box-shadow: 2px 2px 5px black;
-transition-duration: 0.4s;
-transform: translateY(-10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/10/Pine-Forest-Wallpaper-High-Quality-HD.jpg');
+            background-size: cover;
+            text-align: center;
+            background-position: bottom;
 
-}
-.section-features{
-    padding: 5% 10%;
-    text-align: center;
-}
-.section-title{
-    font-size: 40px;
-    
-}
-.section-subtitle{
-font-size: 20px;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container{
-    max-width: 1170px;
-    background-color: rgb(52, 143, 203);
-    margin: auto;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-ul{
-    list-style: none;
-}
-.footer{
-    background-color: #24262b;
-    padding: 70px 0 ;
-}
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-col h4{
-color: #ffffffeb;
-font-size: 18px;
-text-transform: capitalize;
-margin-top: 30px;
-font-weight: 500;
-position: relative;
-}
-.footer-col h4::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-    
-}
-.social-links{
-text-align: right;
-width: 100%;
-padding: 2px;
-}
-.service1{
-    border: 2px solid darkgreen;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-bottom: 400px;
+        }
 
-}
-.service2{
-    grid-template-columns: 2fr 1fr;
-}
-.service-image{
-    border: 2px solid crimson;
-}
-.service-content{
-    /* border: 2px solid rgb(30, 30, 187); */
-    padding: 30px;
-}
-.service-content h1{
-    font-size: 30px;
+        .header-content {
+            border: 2px solid blue;
+            color: white;
+        }
 
-}
+        .header-title {
+            font-size: 50px;
 
-</style>
+        }
+
+        .btn {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .btn-main {
+            background-color: var(--theme-color);
+            color: white;
+        }
+
+        .btn-outline {
+            background-color: white;
+            color: var(--theme-color);
+        }
+
+        section {
+            padding: 5% 10%;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .card {
+            border: 2px solid rebeccapurple;
+            padding: 50px 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: var(--theme-color-dark);
+        }
+
+        .card * {
+            margin: 20px;
+        }
+
+        .card:hover {
+            color: wheat;
+            background-color: var(--theme-color);
+            box-shadow: 2px 2px 5px black;
+            transition-duration: 0.4s;
+            transform: translateY(-10px);
+
+        }
+
+        .section-features {
+            padding: 5% 10%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 40px;
+
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1170px;
+            background-color: rgb(52, 143, 203);
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            color: #ffffffeb;
+            font-size: 18px;
+            text-transform: capitalize;
+            margin-top: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+
+        }
+
+        .social-links {
+            text-align: right;
+            width: 100%;
+            padding: 2px;
+        }
+
+        .service1 {
+            border: 2px solid darkgreen;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin-bottom: 30px;
+
+        }
+
+        .service2 {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .service-image {
+            border: 2px solid crimson;
+        }
+
+        .service-content {
+            /* border: 2px solid rgb(30, 30, 187); */
+            padding: 30px;
+        }
+
+        .service-content h1 {
+            font-size: 30px;
+
+        }
+    </style>
 
 
 
@@ -177,146 +213,158 @@ padding: 2px;
 
 <body>
     <header>
-<div class="header-content">
-<h1 class="header-title"> Welcome to Website</h1>
-<p class="header-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem quaerat nostrum id dolorem sint officia corporis voluptatem officiis! Corporis!</p>
-<button class="btn btn-main" >Get Started</button>
-<button  class="btn btn-outline">Explore</button>
+        <div class="header-content">
+            <h1 class="header-title"> Welcome to Website</h1>
+            <p class="header-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem quaerat
+                nostrum id dolorem sint officia corporis voluptatem officiis! Corporis!</p>
+            <button class="btn btn-main">Get Started</button>
+            <button class="btn btn-outline">Explore</button>
 
 
-</div>
+        </div>
     </header>
 
     <main>
         <article>
             <section class="section-features">
                 <h2 class="section-title">Our Feature</h2>
-                <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptate animi neque officiis velit laboriosam?</p>
-<div class="card-container">
+                <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptate
+                    animi neque officiis velit laboriosam?</p>
+                <div class="card-container">
 
 
-<div class="card" >
-    <i class="fa-solid fa-rocket fa-beat-fade fa-3x" ></i>
-    <h3>Card Title</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit doloribus et voluptate quod repellendus, aut veniam in nemo non mollitia delectus! Maiores, assumenda molestias quod harum omnis dolor porro delectus?</p>
-</div>
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-beat-fade fa-3x"></i>
+                        <h3>Card Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit doloribus et voluptate quod
+                            repellendus, aut veniam in nemo non mollitia delectus! Maiores, assumenda molestias quod
+                            harum omnis dolor porro delectus?</p>
+                    </div>
 
 
-<div class="card" >
-    <i class="fa-solid fa-rocket fa-beat-fade fa-3x" ></i>
-    <h3>Card Title</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit doloribus et voluptate quod repellendus, aut veniam in nemo non mollitia delectus! Maiores, assumenda molestias quod harum omnis dolor porro delectus?</p>
-</div>
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-beat-fade fa-3x"></i>
+                        <h3>Card Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit doloribus et voluptate quod
+                            repellendus, aut veniam in nemo non mollitia delectus! Maiores, assumenda molestias quod
+                            harum omnis dolor porro delectus?</p>
+                    </div>
 
 
-<div class="card" >
-    <i class="fa-solid fa-rocket fa-beat-fade fa-3x" ></i>
-    <h3>Card Title</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit doloribus et voluptate quod repellendus, aut veniam in nemo non mollitia delectus! Maiores, assumenda molestias quod harum omnis dolor porro delectus?</p>
-</div>
+                    <div class="card">
+                        <i class="fa-solid fa-rocket fa-beat-fade fa-3x"></i>
+                        <h3>Card Title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit doloribus et voluptate quod
+                            repellendus, aut veniam in nemo non mollitia delectus! Maiores, assumenda molestias quod
+                            harum omnis dolor porro delectus?</p>
+                    </div>
 
-</div>
+                </div>
 
             </section>
-        <section class="section-services">
-            <div class=" service service1">
-                <div class="service-image">
-                    <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+            <section class="section-services">
+                <div class=" service service1">
+                    <div class="service-image">
+                        <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h1>First Service</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias
+                            quo et voluptatem possimus,
+                            blanditiis ducimus! Molestiae sapiente optio quo?</p>
+                        <button class="btn btn-main">Read more</button>
+
+
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h1>First Service</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias quo et voluptatem possimus, 
-                        blanditiis ducimus! Molestiae sapiente optio quo?</p>
-                        <button  class="btn btn-main">Read more</button>
-               
+                <div class=" service service1">
+                    <div class="service-image">
+                        <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h1>First Service</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias
+                            quo et voluptatem possimus,
+                            blanditiis ducimus! Molestiae sapiente optio quo?</p>
+                        <button class="btn btn-main">Read more</button>
 
-            </div>
-</div>
-            <div class=" service service1">
-                <div class="service-image">
-                    <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h1>First Service</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias quo et voluptatem possimus, 
-                        blanditiis ducimus! Molestiae sapiente optio quo?</p>
-                        <button  class="btn btn-main">Read more</button>
-               
+                <div class=" service service1">
+                    <div class="service-image">
+                        <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h1>First Service</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias
+                            quo et voluptatem possimus,
+                            blanditiis ducimus! Molestiae sapiente optio quo?</p>
+                        <button class="btn btn-main">Read more</button>
 
-            </div>
-</div>
-            <div class=" service service1">
-                <div class="service-image">
-                    <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h1>First Service</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias quo et voluptatem possimus, 
-                        blanditiis ducimus! Molestiae sapiente optio quo?</p>
-                        <button  class="btn btn-main">Read more</button>
-               
 
-            </div>
-</div>
-
-        </section>
+            </section>
         </article>
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="row">
-            <div class="footer-col">
-                <h4></h4>
-                <ul>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>company</h4>
-                <ul>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our services</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">affiliated program</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>get Help</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">shipping </a></li>
-                    <li><a href="#">returns</a></li>
-                    <li><a href="#">payment option></option></a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>online Shop</h4>
-                <ul>
-                    <li><a href="#">watch</a></li>
-                    <li><a href="#">bag</a></li>
-                    <li><a href="#">shoes</a></li>
-                    <li><a href="#">dress</a></li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <h4>follow us</h4>
-                
+                <div class="footer-col">
+                    <h4></h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliated program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping </a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">payment option></option></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online Shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h4>follow us</h4>
+
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
-                
+
+                </div>
             </div>
         </div>
-        </div>
-        
+
 
     </footer>
-    
-    
+
+
 </body>
+
 </html>
