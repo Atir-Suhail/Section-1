@@ -6,6 +6,7 @@
     <title>Landing Page</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
 
     :root{
@@ -60,7 +61,8 @@ color: white;
     color: var(--theme-color);
 }
 section{
-    padding: 0 10%;
+    padding: 5%
+     10%;
 }
 .card-container{
     display: flex;
@@ -96,6 +98,75 @@ transform: translateY(-10px);
 .section-subtitle{
 font-size: 20px;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    background-color: rgb(52, 143, 203);
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0 ;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+color: #ffffffeb;
+font-size: 18px;
+text-transform: capitalize;
+margin-top: 30px;
+font-weight: 500;
+position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    
+}
+.social-links{
+text-align: right;
+width: 100%;
+padding: 2px;
+}
+.service1{
+    border: 2px solid darkgreen;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 400px;
+
+}
+.service2{
+    grid-template-columns: 2fr 1fr;
+}
+.service-image{
+    border: 2px solid crimson;
+}
+.service-content{
+    /* border: 2px solid rgb(30, 30, 187); */
+    padding: 30px;
+}
+.service-content h1{
+    font-size: 30px;
+
+}
 
 </style>
 
@@ -110,7 +181,7 @@ font-size: 20px;
 <h1 class="header-title"> Welcome to Website</h1>
 <p class="header-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem quaerat nostrum id dolorem sint officia corporis voluptatem officiis! Corporis!</p>
 <button class="btn btn-main" >Get Started</button>
-<button class="btn btn-outline">Explore</button>
+<button  class="btn btn-outline">Explore</button>
 
 
 </div>
@@ -147,12 +218,105 @@ font-size: 20px;
 </div>
 
             </section>
+        <section class="section-services">
+            <div class=" service service1">
+                <div class="service-image">
+                    <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h1>First Service</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias quo et voluptatem possimus, 
+                        blanditiis ducimus! Molestiae sapiente optio quo?</p>
+                        <button  class="btn btn-main">Read more</button>
+               
+
+            </div>
+</div>
+            <div class=" service service1">
+                <div class="service-image">
+                    <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h1>First Service</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias quo et voluptatem possimus, 
+                        blanditiis ducimus! Molestiae sapiente optio quo?</p>
+                        <button  class="btn btn-main">Read more</button>
+               
+
+            </div>
+</div>
+            <div class=" service service1">
+                <div class="service-image">
+                    <img style="width: 100%;" src="undraw_Mobile_payments_re_7udl.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h1>First Service</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Voluptate, totam asperiores deserunt omnis voluptates numquam a ullam architecto sequi alias quo et voluptatem possimus, 
+                        blanditiis ducimus! Molestiae sapiente optio quo?</p>
+                        <button  class="btn btn-main">Read more</button>
+               
+
+            </div>
+</div>
+
+        </section>
         </article>
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col">
+                <h4></h4>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliated program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping </a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">payment option></option></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online Shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>follow us</h4>
+                
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                
+            </div>
+        </div>
+        </div>
+        
 
     </footer>
+    
     
 </body>
 </html>
