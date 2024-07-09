@@ -9,10 +9,10 @@ console.log(movies);
 // Slicing
 console.log(movies.slice(2));
 console.log(movies.slice(-4));
-console.log(movies.slice(-4,));
+console.log(movies.slice(-4,0));
 console.log(movies.slice(-4,-2));
 console.log(movies.slice(-7,-2));
-console.log(movies.slice());
+console.log(movies.slice(1,5));
 
 
 // Length Of String
