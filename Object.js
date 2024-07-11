@@ -153,6 +153,7 @@ console.log(Array.from(new Set(brand)));
 console.log(Array.from('Apple'));
 
 
+
 let [brand1,model,price] = ['Apple','Iphone16',79999];
 console.log(brand1+ ' '+ model +' '+ price);
 // console.log(`${brand1} ${model} $(price)`);
@@ -166,7 +167,7 @@ const array1 = smartphoneArray.map((phone,index)=>
 console.log(array1);
 
 const allcolorsphones = smartphoneArray.map(phone) => {
-    return `${index + 1}. ${phone.brand} ${phone.model} ($(c) `})
+    return `${index + 1}. ${phone.brand} ${phone.model} ($(c                    ) `})
 }
 
 
