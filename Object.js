@@ -27,6 +27,7 @@ console.log(user.name);
 user.address = 'Lucknow';
 user.age=20;
 console.log(user);
+console.log(user.address);
 
 user['roll-no']=24564;
 console.log(user['roll-no']);
