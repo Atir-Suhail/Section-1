@@ -1,10 +1,12 @@
 import React from 'react'
+import Feedback from '@/Components/Feedback'
 
 const Contact = () => {
   return (
     <div>
-      <h1>
-        Contact Form
+     <Feedback />
+      <h1>jkhhkh
+       
         
       </h1>
     </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const Navbar = () => {
@@ -69,7 +70,7 @@ const Navbar = () => {
             href="#"
             aria-current="page"
           >
-            Landing
+            Home
           </a>
           <a
             className="py-3 ps-px sm:px-3 font-medium text-white/80 hover:text-white"
@@ -175,7 +176,7 @@ const Navbar = () => {
           </div>
           <a
             className="flex items-center gap-x-2 font-medium text-white/80 hover:text-white sm:border-s sm:border-white/30 py-2 md:py-0 sm:my-6 sm:ps-6"
-            href="#"
+            href="/login"
           >
             <svg
               className="flex-shrink-0 size-4"
