@@ -88,7 +88,7 @@ const Navbar = () => {
             className="py-3 ps-px sm:px-3 font-medium text-white/80 hover:text-white"
             href="#"
           >
-            Blog
+            ToDO-List
           </a>
           <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] py-3 ps-px sm:px-3">
             <button
