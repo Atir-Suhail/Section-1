@@ -167,8 +167,9 @@ const array1 = smartphoneArray.map((phone,index)=>
 
 console.log(array1);
 
+
 const allcolorsphones = smartphoneArray.map(phone) => {
-    return `${index + 1}. ${phone.brand} ${phone.model} ($(c                    ) `})
+    return `${index + 1}. ${phone.brand} ${phone.model} ($() `})
 }
 
 
