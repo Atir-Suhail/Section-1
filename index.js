@@ -4,6 +4,7 @@ console.log(' I am Learning JavaScript in Digipodium');
 
 a = 451;
 
+
 console.log(a);
 console.log(typeof a);
 
